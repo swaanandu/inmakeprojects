@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block body %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="{{m.img.url}}" alt="Card image cap">
+   <div class="col-md-6">
+    <h3>{{m.name}}</h3>
+    <h5>{{m.desc}}</h5>
+    <h4>{{m.year}}</h4>
+<div class="btn btn-default btn-lg">
+
+
+       <a class="btn btn-warning" href="{% url 'movieapp:update' m.id %}">update</a>
+       <a class="btn btn-danger" href="{% url 'movieapp:delete' m.id %}">Delete</a>
+       <a class="btn btn-success" href="{% url 'movieapp:add' %}"> Add</a>
+
+</div>
+   </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

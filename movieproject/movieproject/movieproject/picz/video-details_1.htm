@@ -1,0 +1,1317 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+
+    <meta charset="utf-8" />
+    <!-- CSRF Token -->
+    <!-- <meta name="csrf-token" content="HhtaceFiNxWx2cJp6xeEs92hHQdGW6oRZUO5Iod3" /> -->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <meta name="robots" content="index, follow, all" />
+
+    <meta name="description" content="home page Description" />
+    <meta property="og:description" content="home page Description" />
+    <meta name="twitter:description" content="home page Description" />
+
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/imgs/favicon.ico" />
+    <link rel="manifest" href="mix-manifest7b30.json?v=4" />
+    <meta name="theme-color" content="#FFF" />
+    <!-- Windows Phone -->
+    <meta name="msapplication-starturl" content="/" />
+    <meta name="msapplication-TileColor" content="#FFF" />
+    <meta name="msapplication-TileImage" content="ms-icon-144x144.html" />
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-title" content="Inmakes LH" />
+    <link rel="apple-touch-icon" href="./assets/imgs/favicon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <!-- Android -->
+    <link rel="icon" href="./assets/imgs/favicon.png" />
+    <meta name="application-name" content="Inmakes LH" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <!-- Other -->
+    <meta name="layoutmode" content="fitscreen/standard" />
+    <link rel="home" href="index.html" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Home" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Home" />
+
+    <meta property="og:site_name" content="https://inmakeslh.in" />
+    <meta property="og:image" content="./assets/imgs/favicon.png" />
+    <meta name="twitter:image" content="./assets/imgs/favicon.png" />
+    <meta property="og:locale" content="en_US.html" />
+    <meta property="og:type" content="website" />
+
+    <title>Inmakes Learning Hub</title>
+
+    <!-- General CSS File -->
+    <link href="assets/default/css/font.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/default/vendors/sweetalert2/dist/sweetalert2.min.css" />
+    <link rel="stylesheet" href="assets/default/vendors/toast/jquery.toast.min.css" />
+    <link rel="stylesheet" href="assets/default/vendors/simplebar/simplebar.css" />
+    <link rel="stylesheet" href="assets/default/css/app.css" />
+
+    <link rel="stylesheet" href="assets/default/vendors/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/default/vendors/owl-carousel2/owl.carousel.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900|Ubuntu:400,500,700" rel="stylesheet">
+    
+    <style>
+        .pace {
+            -webkit-pointer-events: none;
+            pointer-events: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+        
+        .pace-inactive {
+            display: none;
+        }
+        
+        .pace .pace-progress {
+            background: #29d;
+            position: fixed;
+            z-index: 2000;
+            top: 0;
+            right: 100%;
+            width: 100%;
+            height: 2px;
+        }
+        
+        .pace .pace-progress-inner {
+            display: block;
+            position: absolute;
+            right: 0px;
+            width: 100px;
+            height: 100%;
+            box-shadow: 0 0 10px #29d, 0 0 5px #29d;
+            opacity: 1;
+            -webkit-transform: rotate(3deg) translate(0px, -4px);
+            -moz-transform: rotate(3deg) translate(0px, -4px);
+            -ms-transform: rotate(3deg) translate(0px, -4px);
+            -o-transform: rotate(3deg) translate(0px, -4px);
+            transform: rotate(3deg) translate(0px, -4px);
+        }
+        
+        .pace .pace-activity {
+            display: block;
+            position: fixed;
+            z-index: 2000;
+            top: 15px;
+            right: 15px;
+            width: 14px;
+            height: 14px;
+            border: solid 2px transparent;
+            border-top-color: #29d;
+            border-left-color: #29d;
+            border-radius: 10px;
+            -webkit-animation: pace-spinner 400ms linear infinite;
+            -moz-animation: pace-spinner 400ms linear infinite;
+            -ms-animation: pace-spinner 400ms linear infinite;
+            -o-animation: pace-spinner 400ms linear infinite;
+            animation: pace-spinner 400ms linear infinite;
+        }
+        
+        @-webkit-keyframes pace-spinner {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+        
+        @-moz-keyframes pace-spinner {
+            0% {
+                -moz-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            100% {
+                -moz-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+        
+        @-o-keyframes pace-spinner {
+            0% {
+                -o-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            100% {
+                -o-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+        
+        @-ms-keyframes pace-spinner {
+            0% {
+                -ms-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            100% {
+                -ms-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+        
+        @keyframes pace-spinner {
+            0% {
+                transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @media (min-width:961px)  {
+         /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+         #usernameId{
+            display: inline !important;
+         }
+        }
+
+
+
+
+
+
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 8px;
+
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 13px;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+
+        
+
+    </style>
+
+    <script>
+        window.paceOptions = {
+            ajax: false, // disabled
+            document: false, // disabled
+            eventLag: false, // disabled
+        };
+    </script>
+    <script src="assets/default/vendors/pace-loading/pace.min.js"></script>
+    <!-- <script src="jscookie.js"></script> -->
+    
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/3.0.1/js.cookie.min.js" integrity="sha512-wT7uPE7tOP6w4o28u1DN775jYjHQApdBnib5Pho4RB0Pgd9y7eSkAV1BTqQydupYDB9GBhTcQQzyNMPMV3cAew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<style type="text/css">
+
+/*NAVBAR*/
+.navbar .nav-item .nav-link{
+	font-weight: 500;
+	padding: 10px 15px !important;
+}
+.xc-navbar-nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.xc-dropbtn{
+	display: block;
+    background: #32a35b;
+    padding: 7px 26px !important;
+}
+
+/*HOME*/
+.xc-hero-section{
+    background-image: url('assets/ast/backdrop.png');
+    height: auto;
+    min-height: 93vh;
+    display: flex;
+    align-items: center;
+}
+.xc-hero-section .hero-section2{
+
+}
+.xc-hero-btn-wrapper{
+	margin-top: 30px;
+}
+.xc-hero-btn-wrapper .xc-hero-btn-1{
+	margin-right: 10px;
+}
+.xc-hero-title-1{
+	font-family: 'Open Sans', sans-serif; 
+	font-size:87px !important;
+}
+.xc-hero-title-2{
+	font-family: 'Open Sans', sans-serif;
+	color: #43D477; 
+	font-size:35px !important;
+}
+.xc-hero-title-3{
+	font-family: 'Open Sans', sans-serif;
+	color: #002333; 
+	font-weight: normal;
+	font-size:31px !important;
+}
+.xc-hero-image-wrapper img{
+	width: 135% !important;
+}
+
+
+
+
+.xc-section-2{
+	padding-top: 4em;
+}
+.xc-section-2-title{
+	padding-bottom: 1em;
+}
+.trending-card h3 {
+    padding: 10px 0 15px !important;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.xc-section-2-title, .xc-section-3-title{
+	font-family: 'Montserrat', sans-serif; 
+	text-align: center;
+	color:#002333;
+}
+
+.xc-partner-logo-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.xc-partner-logo-wrapper img{
+	max-width: 100px;	
+}
+ 
+
+.xc-m-home-video-content{
+	display: none;
+}
+.xc-m-home-video-content .xc-m-home-video-hint, .xc-m-home-video-content .xc-m-home-video-title{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #002333;
+}
+
+
+.xc-about-section-1{
+	height:815px !important;
+}
+/*About us*/
+
+.xc-about-title-1{
+	font-size:29px !important;
+}
+.xc-about-title-2{
+	font-family: 'Montserrat', sans-serif !important; 
+	color:#002333 !important; 
+	font-size:60px !important;
+}
+.xc-about-title-3{
+	font-family: 'Montserrat', sans-serif !important; 
+	color:#002333 !important; 
+	margin-top:9px !important; 
+	font-weight:500 !important;
+	font-size: 37px !important;
+}
+.xc-about-title-4{
+	font-family: 'Montserrat', sans-serif !important; 
+	color:#002333 !important; 
+	margin-top:20px !important;
+}
+.xc-about-title-5{
+	font-family: 'Montserrat', sans-serif !important; 
+	color:#002333 !important; 
+	margin-top:20px !important;
+}
+
+
+.xc-about-title-6{
+	font-family: 'Montserrat', sans-serif; 
+	text-align: center; 
+	color:#002333; 
+	font-size:50px;
+}
+.xc-why-content .uniq{
+    margin: auto;
+    margin-bottom: 40px;
+}
+@media screen and (max-width: 768px){
+
+
+	/*Nav*/
+	.xc-dropbtn {
+	    padding: 7px 12px !important;
+	}
+	.xc-dropbtn:hover {
+	    color: #fff !important;
+	}
+
+	/*Home*/
+	.xc-hero-image-wrapper{
+		text-align: center;
+	}
+	.xc-hero-image-wrapper img{
+		width: 200px !important;
+		margin-bottom: 1em;
+		margin-left: 12em;
+	}
+
+	.xc-hero-title-1 {
+		font-size:62px !important;
+	}
+	.animate-charcter{
+		font-size:60px !important;
+	}
+	.xc-hero-title-2{
+
+		font-size:20px !important;
+	}
+	.xc-hero-title-3{
+		font-size:20px !important;
+	}
+	.xc-hero-content{
+		padding-left: 20px !important;
+	}
+	.xc-d-block{
+		display: block;
+	}
+	.xc-mb{
+		margin-bottom: 15px;
+	}
+
+	.xc-section-2, .xc-section-3{
+		padding-top: 30px;
+	}
+	.xc-section-2-title, .xc-section-3-title{
+		padding-bottom: 15px;
+	}
+
+	.trending-card h3 {
+	    padding: 5px 0 5px !important;
+	    font-size: 11px;
+	}
+	#trendingCourses{
+		margin-top: 15px !important;
+	}
+
+	.home-video-container {
+	    padding-top: 55px !important;
+	    padding-bottom: 63px;
+	    border-radius: 9px;
+	}
+	.home-video-container .home-video-title {
+	    font-size: 20px;
+	    padding-top: 26px;
+	}
+	.xc-partner-logo-wrapper{
+	    padding-bottom: 29px;
+	    text-align: center;
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	}
+	.xc-partner-logo-wrapper img{
+	    max-width: 100px;
+	    text-align: center;
+	}
+
+
+	.xc-video-text{
+		display: none;
+	}
+	.home-video-mask {
+	    display: none;
+	}
+	.home-video-container{
+		background-size: cover;
+	}
+
+	.xc-m-home-video-content{
+	    display: block;
+	    padding: 28px 10px 10px;
+	}
+	.xc-m-home-video-content .xc-m-home-video-title{
+		padding-bottom: 10px;
+	}
+	.xc-m-home-video-content .xc-m-home-video-hint{
+
+	}
+
+
+
+	/*About us*/
+	.xc-about-section-1{
+		height: auto !important;
+	}
+	.xc-counter-box{
+		padding-bottom: 20px;
+	}
+	.xc-counter-box p{
+		font-size: 11px;
+	}
+
+	.xc-about-title-1{
+		font-size: 15px !important;
+	}
+	.xc-about-title-2{
+	    font-size: 30px !important;
+	    padding-top: 15px;
+	}
+	.xc-about-title-3{
+		font-size: 26px !important;
+	}
+	
+
+	.xc-m-text-center{
+		text-align: center;
+	}
+	.xc-about-img-wrapper img{
+		margin-top: 20px;
+	}
+
+
+	.xc-about-title-6{
+		font-size: 25px;
+	}
+	.xc-why-content .uniq{
+		margin: auto;
+		margin-bottom: 15px;
+	}
+	.desviewbutton{
+		display : none;
+	}
+	.mobviewlogbtn{
+		padding : 0px 1px 1px 0px !important;
+		position : relative;
+		
+	}
+	.navbar-nav-drpdown{
+		flex-direction: row-reverse !important;
+	}
+	.labeldrpbtn{
+		width:140px!important;
+	}
+}
+@media (min-width: 769px) and (max-width: 991px){
+	.xc-hero-title-1{
+		font-size:59px !important;
+	}
+	.xc-hero-title-2{
+
+		font-size:25px !important;
+	}
+	.xc-hero-title-3{
+		font-size:25px !important;
+	}
+
+	/*About*/
+	.xc-about-section-1 {
+	    height: auto !important;
+	}
+	.xc-about-title-1 {
+	    font-size: 16px !important;
+	}
+	.xc-about-title-2 {
+	    font-size: 40px !important;
+	}
+	.xc-about-title-3 {
+	    font-size: 30px !important;
+	}
+	.xc-about-hero-content{
+		padding-left: 40px !important;
+	}
+	.xc-counter-box p{
+		font-size: 11px;
+	}
+
+}
+@media (min-width: 992px) and (max-width: 1200px){
+	.xc-hero-title-1{
+		font-size: 76px !important;
+	}
+	.animate-charcter{
+		font-size: 76px !important;
+	}
+	.xc-hero-title-2{
+
+		font-size:25px !important;
+	}
+	.xc-hero-title-3{
+		font-size:25px !important;
+	}
+
+
+	/*About*/
+	.xc-about-section-1 {
+	    height: auto !important;
+	}
+}
+@media (min-width: 1201px) and (max-width: 1400px){
+	.xc-hero-section{
+		min-height: 88vh;
+		padding: 60px 0 60px !important;
+	}
+	.xc-hero-title-1{
+		font-size:98px !important;
+	}
+	.xc-hero-title-2{
+
+		font-size:25px !important;
+	}
+	.xc-hero-title-3{
+		font-size:25px !important;
+	}
+	.mobviewbutton{
+		display : none;
+	}
+}
+@media (min-width: 1401px) and (max-width: 1500px){
+	.mobviewbutton{
+		display : none;
+	}
+}
+@media (min-width: 1501px) and (max-width: 1800px){
+	.mobviewbutton{
+		display : none;
+	}
+}
+@media (min-width: 1801px){
+	.mobviewbutton{
+		display : none;
+	}
+}
+</style>
+
+    <script src="https://player.vimeo.com/api/player.js?v1.0"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/hls.js@0.14.17/dist/hls.min.js"></script> -->
+    <!-- <script src="https://unpkg.com/plyr@3"></script> -->
+
+    <style>
+    .video-box {
+        box-shadow: 0 0 1px rgba(0, 0, 0, .125), 0 12px 13px rgba(0, 0, 0, .2);
+        width: 100%;
+        height: 100%;
+        border-radius: 25px;
+    }
+
+
+    .vids {
+        width: 100%;
+        /* height: 450px; */
+
+    }
+    </style>
+
+
+    <style>
+    @media only screen and (max-device-width: 480px) {
+
+        /* styles for mobile browsers smaller than 480px; (iPhone) */
+        .trimtext {
+            display: block;
+            width: 240px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    }
+
+    @media only screen and (device-width: 768px) {
+
+        /* default iPad screens */
+        .trimtext {
+            display: block;
+            width: 240px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    }
+    </style>
+
+    <script>
+    // document.addEventListener('contextmenu', event => event.preventDefault());
+    </script>
+
+</head>
+
+<body class="">
+    <div id="app">
+        <div class="top-navbar d-flex border-bottom">
+            
+
+      <script>
+
+        
+
+        function logoutfn(){
+                Cookies.remove('studentName');
+                Cookies.remove('studentId');
+                Cookies.remove('accessToken'); 
+                Cookies.remove('mobileNumber'); 
+                Cookies.remove('emailId'); 
+                window.location.replace("https://inmakeslh.in/login.php");
+
+        }
+      </script>        </div>
+
+        <div id="navbarVacuum"></div>
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-light">
+
+            <div class="container">
+    <div class="d-flex align-items-center justify-content-between w-100">
+        <!-- <a class="navbar-brand navbar-order mr-0" href="index.html"> </a> -->
+        <a class="navbar-brand navbar-order mr-0" href="/">
+            <img src="./assets/imgs/logo.png" class="img-cover" alt="site logo" style="width: 140px !important;">
+        </a>
+
+        <button class="navbar-toggler navbar-order " type="button" id="navbarToggle">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class=" mx-lg-30  d-none d-lg-flex flex-grow-1 navbar-toggle-content fonoMyCourses  " id="navbarContent">
+            <div class="navbar-toggle-header text-right d-lg-none">
+                <button class="btn-transparent" id="navbarClose">
+                    <i data-feather="x" width="32" height="32"></i>
+                </button>
+            </div>
+
+            <ul class="navbar-nav xc-navbar-nav mr-auto d-flex align-items-center">
+                <li class="mr-lg-25 ">
+                    <div class="menu-category fonoMyCourses" disabled>
+                        <ul>
+                            <li class=" cursor-pointer user-select-none d-flex  xs-categories-toggle ">
+                                <i data-feather="grid" width="20" height="20" class="mr-10 d-none d-lg-block "></i> My
+                                Programs
+                                <ul class="cat-dropdown-menu" id="myCourseDivMain">
+
+
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.php">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="all-courses.php">Internships</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about-us.php">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.php">Contact</a>
+                </li>
+                <li class="nav-item d-lg-none">
+                    <a href="register.php" class="dropbtn xc-dropbtn "
+                        style="display: block;">Register</a>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="nav-icons-or-start-live navbar-order d-none d-lg-block d-xl-none">
+            <div class="dropdown loggedUsernameDiv" style="display: none;">
+                <button class="dropbtn usernameLabel"></button>
+                <div class="dropdown-content">
+                    <a href="./account/dashboard.php">My Account</a>
+                    <a href="./account/notifications.php">Notifications</a>
+                    <a href="./account/support.php">Support</a>
+                    <a class="fonalogoutbtn" id="xregBtn" onclick="logoutfn()">Logout</a>
+                </div>
+            </div>
+            <!-- <a href="login.php" class="dropbtn xc-dropbtn" id="xloginBtn" style="display: block;">Login</a> -->
+        </div>
+
+        <div class="nav-icons-or-start-live navbar-order">
+            <ul class="navbar-nav xc-navbar-nav mr-auto d-flex align-items-center navbar-nav-drpdown">
+                <li class="nav-item desviewbutton">
+                    <a href="register.php" class="dropbtn" style="display: block;">Register</a>
+                </li>&nbsp;
+
+                <li class="nav-item">
+                    <div class="dropdown loggedUsernameDiv" style="display: none;">
+                        <button class="dropbtn usernameLabel labeldrpbtn"></button>
+                        <div class="dropdown-content">
+                            <a href="./account/dashboard.php">My Account</a>
+                            <a href="./account/notifications.php">Notifications</a>
+                            <a href="./account/support.php">Support</a>
+                            <a class="fonalogoutbtn" id="xregBtn" onclick="logoutfn()">Logout</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item mobviewlogbtn">
+                    <a href="login.php" class="dropbtn" id="xloginBtn" style="display: block;padding-left:20px;padding-right:20px;"> Login </a>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+</div>        </nav>
+
+
+
+
+
+        <!-- <section class="course-cover-container " style="height: 300px;;">
+                <img src="./assets/imgs/category_cover.png" class="img-cover course-cover-img" alt="course-chapters" />
+                <div class="cover-content pt-40">
+                    <div class="container position-relative">
+                    </div>
+                </div>
+
+            </section> -->
+
+
+
+
+        <section class="container-fluid course-content-section" style="top: 10px !important;">
+            <div class="row">
+                <div class="col-12 col-lg-12">
+                    <div class="course-content-body user-select-none">
+                        <div class="course-body-on-cover">
+                            <!-- <h1 class="font-30 course-title" id="videoTitle">Title</h1>
+                                <p id="subName"></p> -->
+                            <!-- <span class="d-block font-16">In <a href="../categories/Management.html" target="_blank" class="font-weight-500 text-decoration-underline text-white">Management</a></span> -->
+
+                        </div>
+
+
+
+                        <div class="row ">
+                            <div class="col-md-8">
+
+                                <div class="accordion-content-wrapper mt-15" id="filesAccordion" style="height: 600px;">
+
+                                    <iframe allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen"
+                                        msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen"
+                                        webkitallowfullscreen="webkitallowfullscreen" src="" frameborder="0"
+                                        allow="autoplay;" style="width:90%;height:100%;" title="test"></iframe>
+                                </div>
+                                <div class="Video-dead" id="Video-hd" style="margin-top: 17px;"></div>
+
+
+                                <!-- <div class="row  d-none d-md-block">
+                                    <div class="col-md-12 mt-30">
+                                        <h2 class="section-title after-line">Reviews (0)</h2>
+
+                                        <form action="#" class="mt-20" method="post">
+                                            <input type="hidden" name="webinar_id" value="2000" />
+
+                                            <div class="form-group">
+                                                <textarea name="description" class="form-control" rows="10"></textarea>
+                                            </div>
+
+
+                                            <button type="submit" class="btn btn-sm btn-primary mt-5">Post
+                                                review</button>
+                                            <br><br><br><br><br><br><br><br><br><br><br><br>
+                                        </form>
+
+                                        <div class="mt-45"> -->
+
+                                <!-- <div class="comments-card shadow-lg rounded-sm border px-20 py-15 mt-30" data-address="/reviews/store-reply-comment" data-csrf="HhtaceFiNxWx2cJp6xeEs92hHQdGW6oRZUO5Iod3" data-id="32">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="user-inline-avatar d-flex align-items-center mt-10">
+                                                    <div class="avatar">
+                                                        <img src="../store/996/60dce8f61cc17.png" class="img-cover" alt="">
+                                                    </div>
+                                                    <div class="d-flex flex-column ml-5">
+                                                        <span class="font-weight-500 text-secondary">Robert B. Gray</span>
+
+                                                        <div class="stars-card d-flex align-items-center justify-content-start mt-0">
+                                                            <i data-feather="star" width="20" height="20" class="active"></i>
+                                                            <i data-feather="star" width="20" height="20" class="active"></i>
+                                                            <i data-feather="star" width="20" height="20" class="active"></i>
+                                                            <i data-feather="star" width="20" height="20" class="active"></i>
+                                                            <i data-feather="star" width="20" height="20" class="active"></i>
+
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="d-flex align-items-center">
+                                                    <span class="font-12 text-gray mr-10">2021 Jul 17 | 12:33</span>
+
+                                                    <div class="btn-group dropdown table-actions">
+                                                        <button type="button" class="btn-transparent dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i data-feather="more-vertical" height="20"></i>
+                                    </button>
+                                                        <div class="dropdown-menu">
+                                                            <a href="../reviews/store-reply-commnet" class="webinar-actions d-block text-hover-primary reply-comment">Reply</a>
+                                                            <a href="#" class="webinar-actions d-block mt-10 text-hover-primary">Report</a>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="mt-20 text-gray">
+                                                Great course, concise and to the point. Realized how much time I have been wasting. Tried some of the concept mentioned in this course from other readings before but the framework provided here to create a sustainable environment/process for success was
+                                                the missing piece to keep things from falling apart soon after starting.
+                                            </div>
+
+                                        </div> -->
+                                <!-- </div>
+                                    </div>
+
+                                </div> -->
+                                                                <div class="row  d-none d-md-block">
+                                    <div class="col-md-12 mt-30">
+                                                                                  
+                                                                               
+                                        <div class="mt-45">
+
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                
+
+
+                            </div>
+                            <div class="col-md-4"
+                                style="border-color: #fbfbfb;border-style: solid;border-width:1; margin-top:15px;">
+                                <!-- <h2 class="section-title" style="padding-top: 25px;;">Module Contents </h2>
+                                    <div class="accordion-content-wrapper mt-15"   role="tablist" aria-multiselectable="true" id="comingNext">
+                                    </div> -->
+                                <h2 class="section-title" style="padding-top: 25px;;">Module Contents</h2>
+                                <div class="accordion-content-wrapper mt-15" role="tablist" aria-multiselectable="true"
+                                    id="comingNextModules">
+                                </div>
+                                <div class=" d-block d-md-none"> <br><br><br><br><br><br><br><br> </div>
+
+
+
+
+
+
+                                <div class="accordion-content-wrapper mt-15 othermods" id="sessionsAccordion"
+                                    role="tablist" aria-multiselectable="true">
+
+                                    <!-- <div class="accordion-row rounded-sm shadow-lg border mt-20 p-15">
+                                            <div class="row align-items-center" role="tab" id="sx1">
+                                                <div class="col-md-12 d-flex align-items-center ml-5" href="#collapseSession62" aria-controls="collapseSession62" data-parent="#sessionsAccordion" role="button" data-toggle="collapse" aria-expanded="true">
+                                                    <span class="font-weight-bold text-secondary font-14 "> The Key to Effective Time Management  <button class="btn btn-link btn-sm">View Modules</button></span>
+                                                </div>
+                                            </div>
+                                            <div id="collapseSession62" aria-labelledby="sx1" class=" collapse" role="tabpanel">
+                                                <div class="panel-collapse">
+                                                    <div class="text-gray">
+                                                        <ul class="list-group ">
+
+                                                            <li class="list-group-item">
+                                                                <div class="row align-items-center">
+                                                                    <div class="col-md-8 d-flex align-items-center">
+                                                                        <span class="text-secondary font-14" style="display:contents;">
+                                                                            <span class="trimtext">2. Java Script Introduction   </span> 
+                                                                            <span class="badge badge-secondary">Watched</span>     
+                                                                        </span>
+                                                                    </div>
+                                                                    <div class="col-md-4 d-flex justify-content-end">
+                                                                        <a href="./video-details.php?video=10" class="course-content-btns btn   btn-outline-primary  flex-grow-1" style="height: 30px !important; margin-top: 2%;    max-width: 100% !important;">Watch</a>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> -->
+
+
+                                </div>
+
+
+
+
+
+
+
+
+
+
+
+                            </div>
+                        </div>
+
+
+
+
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </section>
+
+
+
+
+
+
+        <footer class="footer bg-secondary position-relative user-select-none" style="margin-top: 400px;">
+            <style>
+.error {
+    color: red;
+}
+
+.sub_error {
+    color: red;
+}
+
+#banner {
+    display: block;
+}
+
+.certi {
+    display: inline-block;
+    max-width: 20%;
+    margin: 0 2.5%;
+}
+</style>
+
+<div class="container fonoNewsletter">
+    <div class="row">
+        <div class="col-12">
+            <div class="footer-subscribe d-block d-md-flex align-items-center justify-content-between">
+                <div class="flex-grow-1">
+                    <strong>Join with us Now</strong>
+                    <span class="d-block mt-5 text-white"><a href="tel: 0484 2998191">For Support-04842998191</a></span>
+                </div>
+                <div class="subscribe-input bg-white p-10 flex-grow-1 mt-30 mt-md-0">
+                    <form id="addNewsLetter">
+                        <!-- <div id="sub_error" class="sub_error">&nbsp;&nbsp; Email Already Exist!</div> 
+                <div id="sub_success" class="sub_success">&nbsp;&nbsp; You subscribe succesfully!</div> -->
+                        <div class="form-group d-flex align-items-center m-0">
+                            <div class="w-100">
+                                <input type="email" name="email" id="email" class="form-control border-0"
+                                    placeholder="Enter your email here" />
+                            </div>
+                            <input type="submit" id="butsave" class="btn btn-primary rounded-pill" value="Join">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-6 col-md-3" style="margin-top: 3% !important;">
+            <!-- <span class="header d-block text-white font-weight-bold">About US</span> -->
+            <a href="https://inmakeslh.in"><img style="width: 100%;margin-top:10% ;" src="./assets/imgs/logo1.png" /></a>
+            <div class="mt-20">
+                <p>
+                    <font color="#ffffff">Learn new skills with top educators Inmakes learning hub is the right place
+                        for you to learn new skills that will fetch you better opportunities in your career.</font>
+                </p>
+            </div>
+        </div>
+        <div class="col-6 col-md-2" style="margin-top: 10% !important;">
+            <span class="header d-block text-white font-weight-bold">Additional Links</span>
+            <div class="mt-20">
+                <p><a href="login.php">
+                        <font color="#ffffff">- Login</font>
+                    </a></p>
+                <p>
+                    <font color="#ffffff"><a href="registration.php">
+                            <font color="#ffffff">- Register</font>
+                        </a><br /></font>
+                </p>
+                <p><a href="contact.php">
+                        <font color="#ffffff">- Contact us</font>
+                    </a></p>
+                <p><a href="./privacy-policy.php">
+                        <font color="#ffffff">- Privacy Policy</font>
+                    </a></p>
+                <p><a href="./about-us.php">
+                        <font color="#ffffff">- About</font>
+                    </a><br /></p>
+            </div>
+        </div>
+        <div class="col-sm-7 col-md-3" style="margin-top: 10% !important;">
+            <span class="header d-block text-white font-weight-bold">Support</span>
+            <div class="mt-20">
+                <p><a href="tel: +91 4842998191">
+                        <font color="#ffffff"><i class="fa fa-phone" aria-hidden="true"></i> +91 4842998191</font>
+                    </a></p>
+                <p><a href="mailto:mail@inmakeslh.com" target="_blank">
+                        <font color="#ffffff"><i class="fa fa-envelope" aria-hidden="true"></i> mail@inmakeslh.com
+                        </font>
+                    </a></p>
+            </div>
+        </div>
+        <div class="col-6 col-md-4 d-none d-md-block" style="margin-top: 10% !important;">
+            <span class="header d-block text-white font-weight-bold">Recognized/Certified by</span>
+            <div id="banner">
+
+                <div class="mt-20 certi">
+                    <p><a class="d-none d-md-block" href="#"><img style="width: 80px"
+                                src="./assets/imgs/Group 1353.png" /></a></p>
+                </div>
+                <div class="mt-20 certi">
+                    <p><a class="d-none d-md-block" href="#"><img style="width: 80px"
+                                src="./assets/imgs/Group 1354.png" /></a></p>
+                </div>
+                <div class="mt-20 certi">
+                    <p><a class="d-none d-md-block" href="#"><img style="width: 140px"
+                                src="./assets/imgs/Group 1355.png" /></a></p>
+                </div>
+
+            </div>
+            <br>
+            <div class="footer-social d-none d-md-block">
+                <a href="https://www.instagram.com/inmakeslearninghub/" target="_blank"><img
+                        src="./assets/footer/in.png" alt="Instagram" class="mr-15" /></a>
+                <a href="https://wa.me/917594055036" target="_blank"><img src="./assets/footer/w.png" alt="Instagram"
+                        class="mr-15" /></a>
+                <a href="https://www.youtube.com/channel/UCTHhNV59n9o2Pi5m9oK010g" target="_blank"><img
+                        src="./assets/footer/y.png" alt="Instagram" class="mr-15" /></a>
+                <a href="https://www.linkedin.com/company/inmakesofficial/" target="_blank"><img
+                        src="./assets/footer/li.png" alt="Instagram" class="mr-15" /></a>
+                <a href="https://www.facebook.com/Inmakes.LH1/" target="_blank"><img src="./assets/footer/fb.png"
+                        alt="Instagram" class="mr-15" /></a>
+            </div>
+        </div>
+    </div> <br><br>
+    <div class=" d-sm-none d-md-none d-lg-none " style="padding-bottom: 5%;">
+        <span class="header d-block text-white font-weight-bold">Recognized/Certified by</span>
+          <div id="banner">
+              <div class="mt-20 certi">
+                  <p><a class="d-block d-md-none" href="#"><img style="width: 80px" src="./assets/imgs/Group 1353.png" /></a></p>
+              </div>
+              <div class="mt-20 certi">
+                  <p><a class="d-block d-md-none" href="#"><img style="width: 80px" src="./assets/imgs/Group 1354.png" /></a></p>
+              </div>
+              <div class="mt-20 certi">
+                  <p><a class="d-block d-md-none" href="#"><img style="width: 140px" src="./assets/imgs/Group 1355.png" /></a></p>
+              </div>
+          </div><br>
+          <a href="https://www.instagram.com/inmakeslearninghub/" target="_blank">
+            <img src="./assets/footer/in.png" width="35px" alt="Instagram" class="mr-15" />
+          </a>
+          <a href="https://wa.me/917594055036" target="_blank">
+            <img src="./assets/footer/w.png" width="35px" alt="w" class="mr-15" />
+          </a>
+          <a href="https://www.youtube.com/channel/UCTHhNV59n9o2Pi5m9oK010g" target="_blank">
+            <img src="./assets/footer/y.png" width="35px" alt="y" class="mr-15" />
+          </a>
+          <a href="https://www.linkedin.com/company/inmakesofficial/" target="_blank">
+            <img src="./assets/footer/li.png" width="35px" alt="li" class="mr-15" />
+          </a>
+          <a href="https://www.facebook.com/Inmakes.LH1/" target="_blank">
+            <img src="./assets/footer/fb.png" width="35px" alt="fbico" class="mr-15" />
+          </a>
+    </div>
+
+    <div class=" mt-40  border-blue py-25  d-flex align-items-center justify-content-between ">
+        <div class="">
+            <p class="text-white"><a href="https://inmakeslh.com" class="text-white">Inmakes learning Hub</a> &copy; All
+                rights reserved</p>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+$(document).ready(function(e) {
+    $("#sub_error").hide();
+    $("#sub_success").hide();
+    $('#addNewsLetter').validate({ // initialize the plugin
+        rules: {
+            email: {
+                required: true,
+            },
+        },
+        messages: {
+            email: {
+                required: "Required Email Id",
+            },
+        },
+        errorPlacement: function(error, element) {
+            element.attr("placeholder", error[0].outerText);
+        },
+        submitHandler: function(form) {
+            $(document).on('click', '#butsave', function(e) {
+                e.preventDefault();
+                // $('#addNewsLetter').on('submit', function(e) {
+                var email = $('#email').val();
+                $.ajax({
+                    url: 'newsletter-insert.php',
+                    type: 'POST',
+                    data: {
+                        email: email
+                    },
+                    cache: false,
+                    success: function(response) {
+                        if (response == 'exist') {
+                            Swal.fire('?', 'This email is already exists!', )
+                        } else if (response == 'fail') {
+                            Swal.fire({
+                                icon: 'error',
+                                title: 'Oops...',
+                                text: 'Something went wrong!',
+                            })
+                        } else {
+                            Swal.fire('Successfully Subscribed');
+                            $('#addNewsLetter').trigger("reset");
+                        }
+                    }
+                });
+            });
+        }
+    });
+});
+</script>        </footer>
+    </div>
+    <!-- Template JS File -->
+
+    
+    <script src="assets/default/js/app.js"></script>
+    <script src="assets/default/vendors/feather-icons/dist/feather.min.js"></script>
+    <script src="assets/default/vendors/moment.min.js"></script>
+    <script src="assets/default/vendors/sweetalert2/dist/sweetalert2.min.js"></script>
+    <script src="assets/default/vendors/toast/jquery.toast.min.js"></script>
+    <script type="text/javascript" src="assets/default/vendors/simplebar/simplebar.min.js"></script>
+
+    <script>
+        var deleteAlertTitle = "Are you sure?";
+        var deleteAlertHint = "This action cannot be undone!";
+        var deleteAlertConfirm = "Delete";
+        var deleteAlertCancel = "Cancel";
+        var deleteAlertSuccess = "Success";
+        var deleteAlertFail = "Failed";
+        var deleteAlertFailHint = "Error while deleting item!";
+        var deleteAlertSuccessHint = "Item successfully deleted.";
+    </script>
+
+    <script src="assets/default/vendors/lottie/lottie-player.js"></script>
+    <script src="assets/default/vendors/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/default/vendors/owl-carousel2/owl.carousel.min.js"></script>
+    <script src="assets/default/vendors/parallax/parallax.min.js"></script>
+    <script src="assets/default/js/parts/home.min.js"></script>
+    <link href="assets/default/vendors/flagstrap/css/flags.css" rel="stylesheet" />
+    <script src="assets/default/vendors/flagstrap/js/jquery.flagstrap.min.js"></script>
+    <script src="assets/default/js/parts/top_nav_flags.min.js"></script>
+    <script src="assets/default/js/parts/navbar.min.js"></script>
+
+    <script src="assets/default/js/parts/main.min.js"></script>
+
+    
+
+<!-- custom script api calls -->
+<script src="./script/masters.js?v=2"></script>
+
+    <script src="./script/video-page.js?v=13"></script>
+
+
+    <script>
+    $('.fonoNewsletter').hide();
+    </script>
+
+
+    <script>
+    var studentId = Cookies.get('studentId');
+    var activeCourseName = Cookies.get('activeCourseName');
+    var mycoursediv = Cookies.get('myCourseslistArr');
+    $('#myCourseDivMain').html(mycoursediv);
+
+    $('#activeCourseName').html(activeCourseName);
+
+
+
+    if (studentId == null) {
+        $('.fonalogoutbtn').hide();
+        $('#activeCourseName').hide();
+        $('.fonoMyCourses').hide();
+        $('.loggedUsernameDiv').hide();
+
+
+    } else {
+        $('#activeCourseName').show();
+        $('.fonoMyCourses').show();
+        $('#xloginBtn').hide();
+        $('#xRegtnBtn').hide();
+        $('.loggedUsernameDiv').show();
+
+        var emailId = Cookies.get('emailId');
+        var studentName = Cookies.get('studentName');
+        $('.usernameLabel').html(studentName);
+
+    }
+
+    // $(document).bind("contextmenu",function(e){
+    //     return false;
+    // });
+    // document.onkeydown = function (e) {
+    //     return false;
+    // }
+    </script>
+
+
+
+</body>
+
+</html>
