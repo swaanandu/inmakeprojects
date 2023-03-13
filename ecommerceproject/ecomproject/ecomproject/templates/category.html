@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block metadescription %}
+{% if category %}
+{{category.description| truncatewords:155}}
+{% else %}
+Welcome to the world of different shops
+{% endif %}
+{% endblock %}
+{% block title %}
+{% if category %}
+{{category.name}}
+{% else %}
+See our new collections
+{% endif %}
+{% endblock %}
+{% block content %}
+{% if category %}
+<div>
+  <div class="row my-row-class">
+    <div class="mx-auto">
+    <p><a href="{% url 'shop:allprodcat' %}">Our Product Collections</a> :{{category.name}}
+  </div>
+    </div>
+</div>
+{% endif %}
+<div class="mx-auto">
+  {% if category %}
+  <img class="my-image" src="{{category.image.url}}" alt="{{category.name}}">
+</div>
+
+<div>
+  <h1 class="text-center my-title">{{category.name}}</h1>
+  <p class="text-justify">{{category.description}}</p>
+</div>
+{% else %}
+<div class="mx-auto">
+  <img class="my-image" src="{% static 'img/banner.jpg' %}"  alt="our products"> <p class="carousel-caption
+my-style">AQUOS Shops</p>
+</div>
+<br>
+<div>
+   <h1 class="text-center my-title"><b>our product collections</b></h1>
+  <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+</div>
+{% endif %}
+<div class="container">
+  <div class="row mx-auto">
+  {% for i in product.object_list %}
+<div class="my-bottom-margin col-9 col-sm-12 col-md-4 xol-lg-4">
+<div class="card text-center" style="min-width:18rem;">
+ <a href="{{i.get_url}}"><img class ="card-img-top my-image" src="{{i.image.url}}" alt="{{i.name}}"></a>
+
+<div class="card-body">
+  <h3>{{i.name}}</h3>
+  <p>{{i.price}}</p>
+</div>
+</div>
+   <br>
+</div>
+
+{% endfor %}
+
+</div>
+  <div class="mx-auto">
+{% if product.paginator.num_pages > 1 %}
+   <hr>
+    <div class="text-center">
+      {% for pg in product.paginator.page_range %}
+         <a href="?page={{pg}}" class="btn btn-light btn-sm {% if product.number == pg %} active {% endif %}">{{pg}}</a>
+    {% endfor %}
+    </div>
+    {% endif %}
+    </div>
+  <br>
+
+    </div>
+  </div>
+</div>
+{% endblock %}
