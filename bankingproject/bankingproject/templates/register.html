@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+        <style>
+     button {
+       background-color: #4CAF50;
+       width: 100%;
+        color: orange;
+        padding: 15px;
+        margin: 10px 0px;
+        border: none;
+        cursor: pointer;
+         }
+
+ input[type=text], input[type=password] {
+        width: 50%;
+        margin: 8px 0;
+        padding: 12px 20px;
+        display: inline-block;
+        border: 2px solid green;
+        box-sizing: border-box;
+    }
+</style>
+
+</head>
+
+<body style="background-image:url({% static 'img/image.jpeg' %})">
+
+<form action="" method="post">
+
+    {% csrf_token %}
+    <center>
+    <h1 style="color:white;">Registration</h1>
+
+  <input type="text" name="username" placeholder="Enter the username"><br><br>
+        <input type="password" name="password" placeholder="Enter the password"><br><br>
+  <input type="password" name="cpassword" placeholder="Please confirm password"><br><br>
+  <input type="submit">
+</center>
+</form>
+ {% for i in messages %}
+    <h3>{{i}}</h3>
+    {% endfor %}
+</body>
+</html>

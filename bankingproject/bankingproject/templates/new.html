@@ -1,0 +1,148 @@
+{% load static %}
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+ <style>
+
+button {
+       background-color: #4CAF50;
+       width: 100%;
+        color: orange;
+        padding: 15px;
+        margin: 10px 0px;
+        border: none;
+        cursor: pointer;
+         }
+
+ input[type=text], input[type=password] {
+        width: 50%;
+        margin: 8px 0;
+        padding: 12px 20px;
+        display: inline-block;
+        border: 2px solid green;
+        box-sizing: border-box;
+    }
+</style>
+</head>
+<body style="background-image:url({% static 'img/abc.jpg' %})">
+
+<form action="" method="post">
+
+    {% csrf_token %}
+
+    <h1>Application</h1>
+  <input type="text" name="Name" placeholder="Enter your Name"><br><br>
+    <input type="date" name="DOB" placeholder="Enter your DOB"><br><br>
+  <input type="number" name="Age" placeholder="Enter your Age"><br><br>
+    <form>
+       <p>Gender:</p>
+    <input type="radio" name="contact" value="Male"> Male
+    <input type="radio" name="contact" value="Female"> Female
+    <input type="radio" name="contact" value="Other"> Other
+        <closeform></closeform></form><br><br>
+       <label for="phone">Enter your phone number:</label><br><br>
+  <input type="tel" id="phone" name="phone" placeholder="123-455-6786" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br>
+  <input type="email" name="Name" placeholder="Enter your Email"><br><br>
+
+        Address
+<br>
+<textarea cols="80" rows="5" value="address">
+</textarea>
+<br> <br>
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+var subjectObject = {
+  "India": {
+    "Maharashtra": ["Mumbai", "Thane", "Pune", "Nasik"],
+    "Kerala": ["Kochi", "Trivandrum", "Calicut", "Kannur"],
+    "Chennai": ["Nagarcoil", "Dindigal", "Annanagar", "Choolai"]
+  },
+  "USA": {
+    "California": ["Menifee", "Wildomar", "Eastvale"],
+    "Texas": ["Austin", "Dallas", "Houston"]
+
+  }
+}
+window.onload = function() {
+  var subjectSel = document.getElementById("subject");
+  var topicSel = document.getElementById("topic");
+  var chapterSel = document.getElementById("chapter");
+  for (var x in subjectObject) {
+    subjectSel.options[subjectSel.options.length] = new Option(x, x);
+  }
+  subjectSel.onchange = function() {
+    //empty Chapters- and Topics- dropdowns
+    chapterSel.length = 1;
+    topicSel.length = 1;
+    //display correct values
+    for (var y in subjectObject[this.value]) {
+      topicSel.options[topicSel.options.length] = new Option(y, y);
+    }
+  }
+  topicSel.onchange = function() {
+    //empty Chapters dropdown
+    chapterSel.length = 1;
+    //display correct values
+    var z = subjectObject[subjectSel.value][this.value];
+    for (var i = 0; i < z.length; i++) {
+      chapterSel.options[chapterSel.options.length] = new Option(z[i], z[i]);
+    }
+  }
+}
+</script>
+</head>
+<body>
+
+
+<form name="form1" id="form1" action="/action_page.php">
+Country: <select name="subject" id="subject">
+    <option value="" selected="selected">Select country</option>
+  </select>
+  <br><br>
+Districts: <select name="topic" id="topic">
+    <option value="" selected="selected">Please select country first</option>
+  </select>
+  <br><br>
+Branches: <select name="chapter" id="chapter">
+    <option value="" selected="selected">Please select district first</option>
+  </select>
+  <br><br>
+</form>
+
+</body>
+
+    <select name="Account Type" id="Account">
+        <option value="Account Type">Account Type</option>
+       <option value="volvo">Savings account</option>
+        <option value="saab">Current account</option>
+                <option value="saab">Checking account</option>
+                <option value="saab">Money market account</option>
+        <option value="saab">Individual Retirement Accounts </option>
+
+
+
+</select>
+  <br><br>
+           <label for="phone">Materials Provide:</label><br><br>
+
+<input type="checkbox" id="bank1" name="bank1" value="debit">
+  <label for="bank1"> Debit card</label><br>
+  <input type="checkbox" id="bank2" name="bank2" value="credit">
+  <label for="bank2"> credit card</label><br>
+  <input type="checkbox" id="bank3" name="bank3" value="cheque">
+  <label for="bank3"> cheque book</label><br><br>
+                <a href="{% url 'finance:success' %}" class="btn btn-primary py-2 px-4 ms-3">Submit</a>
+          <a href="{% url 'finance:logout' %}">logout</a>
+
+
+</form>
+ {% for i in messages %}
+    <h3>{{i}}</h3>
+    {% endfor %}
+</>
+</html>
