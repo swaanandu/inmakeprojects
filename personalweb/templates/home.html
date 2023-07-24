@@ -1,0 +1,248 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="referrer" content="origin">
+    <title>My website</title>
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+<header class="header">
+  <a href="#" class="logo">Swathy Krishnan.</a>
+   <div class="bx bx-menu" id="menu-icon"></div>
+
+  <nav class="navbar">
+    <a href="#home" class="active">Home</a>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+
+    <span class="active-nav"></span>
+  </nav>
+</header>
+<!-- home section design -->
+<section class="home" id="home">
+    <div class="home-content">
+
+        <h1>Hi,I'm<span> Swathy</span></h1>
+        <div class="text-animate">
+            <h3>Python Developer</h3>
+        </div>
+
+        <p>Worked and willing to work in high-powered,fast moving,multidisciplinary development teams.Committed team player with strong analytical and problem solving skills and ability to quickly adapt to new enivironments and technologies.</p>
+
+    <div class="btn-box">
+        <a href="#" class="btn">Hire Me</a>
+        <a href="#" class="btn">Let's Talk</a>
+    </div>
+
+    </div>
+
+    <div class="home-sci">
+        <a href="https://in.linkedin.com/in/swathy-krishnan-28643812a"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://instagram.com/swathy.krishnan22?igshid=ZDc4ODBmNjlmNQ=="><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/swathy.krishnan.92?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+    </div>
+
+   <div class="home-imgHover"></div>
+</section>
+
+<!-- about section design -->
+<section class="about" id="about">
+    <h2 class="heading">About<span> Me</span></h2>
+    <div class="about-img">
+        <img src="{% static 'img/swa1.jpeg' %}" alt="">
+        <span class="circle-spin"></span>
+    </div>
+    <div class="about-content">
+        <h3>Python Developer</h3>
+        <p>I continually updated with technologies available in the market and took interest in the development of strategies for my projects in python full stack and I was sincere,honest,hardworking and dedicated with a Professional attitude and very good job knowledge</p>
+    <div class="btn-box btns">
+        <a href="#" class="btn">Read More</a>
+    </div>
+    </div>
+
+</section>
+
+<!-- Education section -->
+<section class="education" id="education">
+    <h2 class="heading">My <span>Journey</span></h2>
+    <div class="education-row">
+        <div class="education-column">
+            <h3 class="title">Education</h3>
+            <div class="education-box">
+                <div class="education-content">
+                    <div class="content">
+                        <div class="year"><i class='bx bxs-calendar'></i>2013-2017</div>
+                        <h3>Btech</h3>
+                        <p>College Of Engineering Karunagappally</p>
+                        <p>CGPA: 8.2</p>
+                    </div>
+                </div>
+
+                <div class="education-content">
+                    <div class="content">
+                        <div class="year"><i class='bx bxs-calendar'></i>2011-2013</div>
+                        <h3>Higher Secondary</h3>
+                        <p>Nair Samajam Higher Secondary School</p>
+                        <p>CGPA: 9.6</p>
+                    </div>
+                </div>
+
+                <div class="education-content">
+                    <div class="content">
+                        <div class="year"><i class='bx bxs-calendar'></i>2010-2011</div>
+                        <h3>Secondary Education</h3>
+                        <p>Vidyadhiraja Vidyapeetom</p>
+                        <p>CGPA: 9.6</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="education-column">
+            <h3 class="title">Experience</h3>
+            <div class="education-box">
+                <div class="education-content">
+                    <div class="content">
+                        <div class="year"><i class='bx bxs-calendar'></i>2017-2018</div>
+                        <h3>Java Developer</h3>
+                        <p>Maxgem Technologies Mumbai</p>
+                    </div>
+                </div>
+
+                <div class="education-content">
+                    <div class="content">
+                        <div class="year"><i class='bx bxs-calendar'></i>2019-2020</div>
+                        <h3>Computer Science Apprentice</h3>
+                        <p>Kerala State Drugs And Pharmaceuticals</p>
+                  </div>
+                </div>
+
+                <div class="education-content">
+                    <div class="content">
+                        <div class="year"><i class='bx bxs-calendar'></i>2023-Present</div>
+                        <h3>Python Developer</h3>
+                        <p>Inmakes Infotech Pvt Ltd</p>
+                   </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- skills section -->
+<section class="skills" id="skills">
+    <h2 class="heading">My<span> Skills</span></h2>
+    <div class="skills-row">
+        <div class="skills-column">
+            <h3 class="title">Coding Skills </h3>
+            <div class="skills-box">
+                <div class="skills-content">
+                    <div class="progress">
+                        <h3>Python(Django)<span>90%</span></h3>
+                        <div class="bar"><span></span></div>
+                    </div>
+                    <div class="progress">
+                        <h3>HTML<span>90%</span></h3>
+                        <div class="bar"><span></span></div>
+                    </div>
+                    <div class="progress">
+                        <h3>CSS<span>80%</span></h3>
+                        <div class="bar"><span></span></div>
+                    </div>
+                    <div class="progress">
+                        <h3>Javascript<span>75%</span></h3>
+                        <div class="bar"><span></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="skills-column">
+            <h3 class="title">Professional Skills </h3>
+            <div class="skills-box">
+                <div class="skills-content">
+                    <div class="progress">
+                        <h3>Web Development<span>90%</span></h3>
+                        <div class="bar"><span></span></div>
+                    </div>
+                    <div class="progress">
+                        <h3>Web Design<span>80%</span></h3>
+                        <div class="bar"><span></span></div>
+                    </div>
+                    <div class="progress">
+                        <h3>Analytical Skills<span>90%</span></h3>
+                        <div class="bar"><span></span></div>
+                    </div>
+                    <div class="progress">
+                        <h3>Database Management<span>90%</span></h3>
+                        <div class="bar"><span></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- contact scetion design -->
+<section class="contact" id="contact">
+    <h2 class="heading">Contact<span> Me!</span></h2>
+    <form action="https://formsubmit.co/db3e1450cb718f86a79e74c5f164282e" method="post">
+        <div class="input-box">
+            <div class="input-field">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <span class="focus"></span>
+            </div>
+            <div class="input-field">
+                <input type="text" name="email" placeholder="Email Address" required>
+                <span class="focus"></span>
+            </div>
+        </div>
+
+        <div class="input-box">
+            <div class="input-field">
+                <input type="number" name="number" placeholder="Mobile Number" required>
+                <span class="focus"></span>
+            </div>
+            <div class="input-field">
+                <input type="text" name="email subject" placeholder="Email Subject" required>
+                <span class="focus"></span>
+            </div>
+        </div>
+
+<div class="textarea-field">
+    <textarea name="" id="" cols="30" rows="10" name="message" placeholder="Your Message" required></textarea>
+    <span class="focus"></span>
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+</div>
+<div class="btn-box btns">
+    <button type="submit" class="btn">Submit</button>
+</div>
+
+    </form>
+
+</section>
+
+<!-- footer design -->
+<footer class="footer">
+    <div class="footer-text">
+        <p>Copyright &copy; 2023 by Swathy | All Rights Reserved.</p>
+    </div>
+
+    <div class="footer-iconTop">
+        <a href="#"><i class="bx bx-up-arrow-alt"></i></a>
+    </div>
+</footer>
+
+<script src="index.js"></script>
+</body>
+</html>
